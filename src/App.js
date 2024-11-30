@@ -11,7 +11,7 @@ const App = () => {
     return (
         <Router>
             <div className="container">
-                <h1>Poll App</h1>
+                <h1>Fed App</h1>
                 <Routes>
                     <Route path="/" element={<PollList />} />
                     <Route path="/polls" element={<PollList />} />

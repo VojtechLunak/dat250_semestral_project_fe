@@ -27,7 +27,7 @@ const PollDetail = () => {
 
     return (
         <div className="container">
-            <h2>{poll.question}</h2>
+           <h2>{poll.question}, Total votes: {poll.votes ? poll.votes.length : 0}</h2>
             <h3>Vote Options</h3>
             <ul>
                 {filteredVoteOptions.map((option) => (

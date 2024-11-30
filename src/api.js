@@ -31,3 +31,8 @@ export const getAllPolls = (token) => {
 export const getPoll = (id) => apiClient.get(`/polls/${id}`);
 export const createPoll = (poll) => apiClient.post('/polls', poll);
 export const createVoteOption = (voteOption) => apiClient.post('/vote-options', voteOption);
+export const getVoteOption = (id) => apiClient.get(`/vote-options/${id}`);
+export const castVote = ( voteData ) => {
+    return apiClient.post(`/votes`, voteData); 
+};
+

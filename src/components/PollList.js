@@ -72,7 +72,9 @@ const PollList = () => {
             ) : (
                 <p>No polls available. Be the first to <Link to="/create-poll">create one</Link>!</p>
             )}
+            <div><Link to="/create-poll">Create new poll</Link></div>
         </div>
+        
     );
 };
 
