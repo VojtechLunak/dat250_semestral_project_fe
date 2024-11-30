@@ -9,7 +9,7 @@ const CreatePoll = () => {
 
     const handleOptionChange = (index, value) => {
         const options = [...voteOptions];
-        options[index].caption = value; // Update the caption directly
+        options[index].caption = value;
         setVoteOptions(options);
     };
 

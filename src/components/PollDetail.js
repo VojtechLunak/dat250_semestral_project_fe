@@ -23,12 +23,14 @@ const PollDetail = () => {
         return <div>Loading poll...</div>;
     }
 
+    const filteredVoteOptions = poll.voteOptions.filter(option => option.id !== null);
+
     return (
         <div className="container">
             <h2>{poll.question}</h2>
             <h3>Vote Options</h3>
             <ul>
-                {poll.voteOptions.map((option) => (
+                {filteredVoteOptions.map((option) => (
                     <li key={option.id}>
                         <Vote option={option} />
                     </li>
