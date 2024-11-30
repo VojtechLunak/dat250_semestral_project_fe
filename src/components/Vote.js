@@ -22,6 +22,7 @@ const Vote = ({ option }) => {
             });
 
             alert(`You successfully voted for: ${option.caption}`);
+            window.location.reload();
         } catch (error) {
             console.error('Error casting vote:', error);
             alert('Failed to cast your vote. Please try again.');
